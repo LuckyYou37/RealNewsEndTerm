@@ -1,0 +1,19 @@
+.redreal{
+    color: red;
+}
+
+.recent{
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.nav-item:hover{
+    border-bottom: 2px solid red;
+}
+.navbar{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
