@@ -1,6 +1,14 @@
-const mongoose = require("mongoose");
+const express = require('express');
+const app = express();
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 
-mongoose.connect("mongodb://localhost:27017/newsdb", {useNewUrlParser: true,useUnifiedTopology: true});
+app.use(bodyParser.urlencoded({extended: true}));
+
+
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
 
 const newsSchema = new mongoose.Schema({
     title: String,
@@ -37,3 +45,8 @@ News.insertMany([news,news1],function(err,foundItems){
 */
 
 // news.save()
+
+
+app.listen( 27017, function() {
+    console.log("http://localhost:21017")
+})
