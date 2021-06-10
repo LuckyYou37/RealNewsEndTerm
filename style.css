@@ -1,19 +1,46 @@
+.body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
 .redreal{
     color: red;
 }
 
 .recent{
-    padding: 10px;
+    padding: 2%;
     margin-left: 25%;
     margin-right: 25%;
 }
 
 .nav-item:hover{
+    transition: color 0.5 s linear;
     border-bottom: 2px solid red;
 }
+.navbar-brand{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
 .navbar{
+    font-family: 'Montserrat', sans-serif;
     margin-top: 10px;
     margin-left: 20px;
     margin-bottom: 10px;
     margin-right: 20px;
 }
+
+.worldNews{
+    float: left;
+    padding-left: 6%;
+    padding-right: 6%;
+    
+}
+
+.weather{
+    padding-right: 6%;
+    padding-left: 6%;
+    float: right;
+}
+
+
+
